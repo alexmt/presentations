@@ -68,6 +68,23 @@ spec:
 
 ---
 
+# Concurrent Manifest Generation
+
+**Testing**
+
+https://github.com/argoproj/argo-cd/pull/4625#issuecomment-714813215
+
+ * Argo CD instance that manages 40 Kustomize based applications pointing to one repository
+ * Two argocd-repo-server instances
+ * Test: concurrently refresh 40 applications with and without "hard-refresh" flag (drops manifest cache). The difference is manifest generation time.
+ **Result**:
+    before ~15s = 27s - 12s
+    after ~1s = 13s - 12s
+ 
+
+
+---
+
 # Path Manifest Generation Annotation
 
 ## Use case
