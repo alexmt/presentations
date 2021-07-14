@@ -8,7 +8,19 @@ class:
 
 https://github.com/argoproj/notifications-engine
 
+* Why Notifications Engine?
+* Features
+* Demo
+
 ![bg right contain](engine.png)
+
+---
+
+# Why Notifications Engine?
+
+* Notifications Engine is generic
+* Not specific to Argoproj and only depends on Kubernetes
+* Can be used to implement notifications for any Kubernetes resource
 
 ---
 
